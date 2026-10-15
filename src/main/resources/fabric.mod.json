@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cozycooking",
+  "version": "${version}",
+  "name": "CozyCooking",
+  "description": "a mod about cooking",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/cozycooking/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.ody.cozycooking.client.CozycookingDataGenerator"
+    ],
+    "client": [
+      "net.ody.cozycooking.client.CozycookingClient"
+    ],
+    "main": [
+      "net.ody.cozycooking.Cozycooking"
+    ]
+  },
+  "mixins": [
+    "cozycooking.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
